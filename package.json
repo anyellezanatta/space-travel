@@ -1,16 +1,15 @@
 {
   "name": "space-travel",
   "version": "1.0.0",
-  "description": "![Design preview for the QR code component coding challenge](./design/desktop-preview.jpg)",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"    
+    "start": "node index.js"
   },
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-  },
+  "license": "MIT",
   "devDependencies": {
+    "express": "^4.18.2"
   }
 }
