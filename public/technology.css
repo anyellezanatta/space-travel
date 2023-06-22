@@ -1,0 +1,22 @@
+
+/* technology */
+.technology {
+    background-image: url("./assets/technology/background-technology-mobile.jpg");
+  }
+  
+  /* stylelint-disable-next-line media-feature-range-notation */
+  @media (min-width: 35rem) {
+    .technology {
+      background-position: center center;
+      background-image: url("./assets/technology/background-technology-tablet.jpg");
+    }
+  }
+  
+  /* stylelint-disable-next-line media-feature-range-notation */
+  @media (min-width: 45rem) {
+    .technology {
+      background-image: url("./assets/technology/background-technology-desktop.jpg");
+    }
+  }
+  
+  

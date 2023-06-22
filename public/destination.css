@@ -1,0 +1,20 @@
+/* destination */
+.destination {
+    background-image: url("./assets/destination/background-destination-mobile.jpg");
+  }
+  
+  /* stylelint-disable-next-line media-feature-range-notation */
+  @media (min-width: 35rem) {
+    .destination {
+      background-position: center center;
+      background-image: url("./assets/destination/background-destination-tablet.jpg");
+    }
+  }
+  
+  /* stylelint-disable-next-line media-feature-range-notation */
+  @media (min-width: 45rem) {
+    .destination {
+      background-image: url("./assets/destination/background-destination-desktop.jpg");
+    }
+  }
+  
