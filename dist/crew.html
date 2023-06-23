@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABO1BMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////l9Pff8fS54ein2eOn2eL9/v684unr9vj7/f7c8PSl2eKHzNil2OLv+Prz+vue1eB3xdOq2uPm9Pf29/vy8/n3/Py13+eEyteZ097P6u/2+/zByeKOm8r8/f7u+Pq+4+qOz9uU0dzo9fjb4O5meLbh5fH0+vvV7fHx+fv8/P2Gk8Wbps+44eim2eLW2+xkdrXO1Oit3OWttthperja3u7u+Pn6+/2hrNJneLfFy+P7+/23v92IlcbN0ufx8/nj5/Kbp9BsfbltfrqAj8ORnsvg5PD+/v/v8ffQ1em0vduqtNfn6vS/61TcAAAAHHRSTlMAAAQqbK3Z8v0DN5ff+xqJ6jbC/kHBAjjp3qz8qSKHsgAAAAFiS0dEAf8CLd4AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfiChMPAx5FOtlkAAABSUlEQVQ4y4WTZ2OCMBCGc4IMEXAPjB10771t7dLuXbv3/v+/oNigIYjN+4HcJU9CcgMhVxASxLAkK4oshUUhBIgVqBEtqmNXelSLqF4EwDBjmFHMNADoejyRxD4lE/EGAZCScICkFCGc/YHrDkHOACON2yhtOABkTNxWZgYQZHPeqWKH18tlAakas6ezi3E1FQl5Fuhm3LyARD0AsIs9vSSmIrJwC9DXPzA4NEx8C0ktwMjo2PiE3YgFkokxOdUEpmdm5+YXXEBGCjEWl5bpHVZKq2tlMq+gAjHWNza9r9jarpD5QuMX1Z3dv3Fvn72T3LzkweFRfSgd+xJGn3lyeuZ8K+csYNFAXVzWrqr+bDmBoqG+vqnd3t3bDOCE2push8en55fXNzZZTLrfPz6/vn+oX083t2C4JccvWm7Z8xuH33r85v2v/X8Bp/FiyVLnL/0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMTAtMTlUMTU6MDM6MzArMDI6MDCzEaEaAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTEwLTE5VDE1OjAzOjMwKzAyOjAwwkwZpgAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg==" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet" />
+
+    <!-- Our custom CSS -->
+    
+    
+    <title>Frontend Mentor | Space tourism website</title>
+    <script src="navigation.js" defer></script>
+    <script src="tabs.js" defer></script>
+    <link rel="stylesheet" href="/space-travel/assets/crew-d7fe2f7f.css">
+  </head>
+
+  <body class="crew">
+    <a class="skip-to-content" href="#main">Skip to content</a>
+    <header class="primary-header flex">
+      <div>
+        <img
+          src="/space-travel/assets/logo-43040818.svg"
+          alt="space tourism logo"
+          class="logo" />
+      </div>
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+        <span class="sr-only" aria-expanded="false">Menu</span>
+      </button>
+      <nav>
+        <ul
+          id="primary-navigation"
+          data-visible="false"
+          class="primary-navigation underline-indicators flex">
+          <li>
+            <a
+              class="ff-sans-cond uppercase text-white letter-spacing-2"
+              href="index.html"
+              ><span aria-hidden="true">00</span>Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="ff-sans-cond uppercase text-white letter-spacing-2"
+              href="destination.html"
+              ><span aria-hidden="true">01</span>Destination</a
+            >
+          </li>
+          <li class="active">
+            <a
+              class="ff-sans-cond uppercase text-white letter-spacing-2"
+              href="crew.html"
+              ><span aria-hidden="true">02</span>Crew</a
+            >
+          </li>
+          <li>
+            <a
+              class="ff-sans-cond uppercase text-white letter-spacing-2"
+              href="technology.html"
+              ><span aria-hidden="true">03</span>Technology</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main" class="grid-container grid-container-crew flow">
+      <h1 class="numbered-title">
+        <span aria-hidden="true">02</span> Meet your crew
+      </h1>
+
+      <div
+        class="dot-indicators flex"
+        role="tablist"
+        aria-label="crew member list">
+        <button
+          aria-selected="true"
+          aria-controls="commander-tab"
+          role="tab"
+          data-image="commander-image"
+          tabindex="0">
+          <span class="sr-only">The commander</span>
+        </button>
+        <button
+          aria-selected="false"
+          aria-controls="mission-tab"
+          role="tab"
+          data-image="mission-image"
+          tabindex="-1">
+          <span class="sr-only">The mission specialist</span>
+        </button>
+        <button
+          aria-selected="false"
+          aria-controls="pilot-tab"
+          role="tab"
+          data-image="pilot-image"
+          tabindex="-1">
+          <span class="sr-only">The pilot</span>
+        </button>
+        <button
+          aria-selected="false"
+          aria-controls="crew-tab"
+          role="tab"
+          data-image="crew-image"
+          tabindex="-1">
+          <span class="sr-only">The crew engineer</span>
+        </button>
+      </div>
+
+      <!-- commander -->
+      <article
+        class="crew-details flow"
+        id="commander-tab"
+        role="tabpanel"
+        tabindex="0">
+        <header class="flow flow-space-small">
+          <h2 class="fs-600 ff-serif uppercase">Commander</h2>
+          <p class="fs-700 uppercase ff-serif">Douglas Hurley</p>
+        </header>
+        <p>
+          Douglas Gerald Hurley is an American engineer, former Marine Corps
+          pilot and former NASA astronaut. He launched into space for the third
+          time as commander of Crew Dragon Demo-2.
+        </p>
+      </article>
+
+      <!-- mission specialist -->
+      <article
+        hidden
+        class="crew-details flow"
+        id="mission-tab"
+        role="tabpanel"
+        tabindex="0">
+        <header class="flow flow-space-small">
+          <h2 class="fs-600 ff-serif uppercase">Mission Specialist</h2>
+          <p class="fs-700 uppercase ff-serif">Mark SHuttleworth</p>
+        </header>
+        <p>
+          Mark Richard Shuttleworth is the founder and CEO of Canonical, the
+          company behind the Linux-based Ubuntu operating system. Shuttleworth
+          became the first South African to travel to space as a space tourist.
+        </p>
+      </article>
+
+      <!-- pilot -->
+      <article
+        hidden
+        class="crew-details flow"
+        id="pilot-tab"
+        role="tabpanel"
+        tabindex="0">
+        <header class="flow flow-space-small">
+          <h2 class="fs-600 ff-serif uppercase">Pilot</h2>
+          <p class="fs-700 uppercase ff-serif">Victor Glover</p>
+        </header>
+        <p>
+          Pilot on the first operational flight of the SpaceX Crew Dragon to the
+          International Space Station. Glover is a commander in the U.S. Navy
+          where he pilots an F/A-18.He was a crew member of Expedition 64, and
+          served as a station systems flight engineer.
+        </p>
+      </article>
+
+      <!-- engineer -->
+      <article
+        hidden
+        class="crew-details flow"
+        id="crew-tab"
+        role="tabpanel"
+        tabindex="0">
+        <header class="flow flow-space-small">
+          <h2 class="fs-600 ff-serif uppercase">Flight Engineer</h2>
+          <p class="fs-700 uppercase ff-serif">Anousheh Ansari</p>
+        </header>
+        <p>
+          Anousheh Ansari is an Iranian American engineer and co-founder of
+          Prodea Systems. Ansari was the fourth self-funded space tourist, the
+          first self-funded woman to fly to the ISS, and the first Iranian in
+          space.
+        </p>
+      </article>
+
+      <picture id="commander-image">
+        <source
+          srcset="/space-travel/assets/image-douglas-hurley-d49c6980.webp "
+          type="image/webp" />
+        <img src="/space-travel/assets/image-douglas-hurley-eefed9f8.png" alt="Douglas Hurley" />
+      </picture>
+      <picture hidden id="mission-image">
+        <source
+          srcset="/space-travel/assets/image-mark-shuttleworth-8cb8ff44.webp "
+          type="image/webp" />
+        <img
+          src="/space-travel/assets/image-mark-shuttleworth-b3fe36f7.png"
+          alt="Douglas Hurley" />
+      </picture>
+      <picture hidden id="pilot-image">
+        <source
+          srcset="/space-travel/assets/image-victor-glover-7debdc8b.webp "
+          type="image/webp" />
+        <img src="/space-travel/assets/image-victor-glover-dfbb7281.png" alt="Douglas Hurley" />
+      </picture>
+      <picture hidden id="crew-image">
+        <source
+          srcset="/space-travel/assets/image-anousheh-ansari-31e0f886.webp "
+          type="image/webp" />
+        <img src="/space-travel/assets/image-anousheh-ansari-1c67226f.png" alt="Douglas Hurley" />
+      </picture>
+    </main>
+  </body>
+</html>
