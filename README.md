@@ -2,6 +2,8 @@
 
 This is an implementation of the space travel challenge from frontendmentor
 
+[![Deploy static content to Pages](https://github.com/anyellezanatta/space-travel/actions/workflows/github-pages-main.yml/badge.svg)](https://github.com/anyellezanatta/space-travel/actions/workflows/github-pages-main.yml)
+
 ## Stack
 
 - HTML 5
