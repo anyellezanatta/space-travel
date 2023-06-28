@@ -1,1 +1,0 @@
-const e=document.querySelector(".primary-navigation"),t=document.querySelector(".mobile-nav-toggle");t.addEventListener("click",()=>{e.getAttribute("data-visible")==="false"?(e.setAttribute("data-visible",!0),t.setAttribute("aria-expanded",!0)):(e.setAttribute("data-visible",!1),t.setAttribute("aria-expanded",!1))});

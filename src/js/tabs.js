@@ -54,11 +54,13 @@ function changeTabPanel(e) {
 }
 
 function hideContent(parent, content) {
-  parent
-    .querySelectorAll(content)
-    .forEach((item) => item.setAttribute("hidden", true));
+  parent.querySelectorAll(content).forEach((item) => {
+    item.setAttribute("style", "visibility: hidden;");
+    item.setAttribute("hidden", true);
+  });
 }
 
 function showContent(parent, content) {
   parent.querySelector(content).removeAttribute("hidden");
+  parent.querySelector(content).removeAttribute("style");
 }

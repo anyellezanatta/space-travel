@@ -8,7 +8,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/favicon-32x32.png" />
+      href="../assets/favicon-32x32.png" />
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,11 +17,11 @@
       rel="stylesheet" />
 
     <!-- Our custom CSS -->
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="../index.css" />
     <link rel="stylesheet" href="destination.css" />
     <title>Frontend Mentor | Space tourism website</title>
-    <script src="navigation.js" defer></script>
-    <script src="tabs.js" defer></script>
+    <script src="../js/navigation.js" defer></script>
+    <script src="../js/tabs.js" defer></script>
   </head>
 
   <body class="destination">
@@ -29,7 +29,7 @@
     <header class="primary-header flex">
       <div>
         <img
-          src="./assets/shared/logo.svg"
+          src="../assets/shared/logo.svg"
           alt="space tourism logo"
           class="logo" />
       </div>
@@ -44,7 +44,7 @@
           <li>
             <a
               class="ff-sans-cond uppercase text-white letter-spacing-2"
-              href="index.html"
+              href="../index.html"
               ><span aria-hidden="true">00</span>Home</a
             >
           </li>
@@ -58,14 +58,14 @@
           <li>
             <a
               class="ff-sans-cond uppercase text-white letter-spacing-2"
-              href="crew.html"
+              href="../crew/crew.html"
               ><span aria-hidden="true">02</span>Crew</a
             >
           </li>
           <li>
             <a
               class="ff-sans-cond uppercase text-white letter-spacing-2"
-              href="technology.html"
+              href="../technology/technology.html"
               ><span aria-hidden="true">03</span>Technology</a
             >
           </li>
@@ -78,27 +78,31 @@
         <span aria-hidden="true">01</span> Pick your destination
       </h1>
 
-      <picture id="moon-image">
-        <source srcset="assets/destination/image-moon.webp" type="image/webp" />
-        <img src="assets/destination/image-moon.png" alt="the moon" />
-      </picture>
-      <picture hidden id="mars-image">
-        <source srcset="assets/destination/image-mars.webp" type="image/webp" />
-        <img src="assets/destination/image-mars.png" alt="the planet mars" />
-      </picture>
-      <picture hidden id="europa-image">
+      <picture hidden id="moon-image">
         <source
-          srcset="assets/destination/image-europa.webp"
+          srcset="../assets/destination/image-moon.webp"
+          type="image/webp" />
+        <img src="../assets/destination/image-moon.png" alt="the moon" />
+      </picture>
+      <picture hidden id="mars-image" style="visibility: hidden">
+        <source
+          srcset="../assets/destination/image-mars.webp"
+          type="image/webp" />
+        <img src="../assets/destination/image-mars.png" alt="the planet mars" />
+      </picture>
+      <picture hidden id="europa-image" style="visibility: hidden">
+        <source
+          srcset="../assets/destination/image-europa.webp"
           type="image/webp" />
         <img
-          src="assets/destination/image-europa.png"
+          src="../assets/destination/image-europa.png"
           alt="the planet europa" />
       </picture>
-      <picture hidden id="titan-image">
+      <picture hidden id="titan-image" style="visibility: hidden">
         <source
-          srcset="assets/destination/image-titan.webp"
+          srcset="../assets/destination/image-titan.webp"
           type="image/webp" />
-        <img src="assets/destination/image-titan.png" alt="the moon titan" />
+        <img src="../assets/destination/image-titan.png" alt="the moon titan" />
       </picture>
 
       <div

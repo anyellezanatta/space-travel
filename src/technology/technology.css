@@ -1,0 +1,75 @@
+/* technology */
+.technology {
+  background-image: url("../assets/technology/background-technology-mobile.jpg");
+}
+
+/* technology layout */
+
+.grid-container-technology {
+  --flow-space: 2rem;
+
+  grid-template-areas:
+    "title"
+    "image"
+    "tabs"
+    "content";
+}
+
+.grid-container-technology > picture {
+  grid-area: image;
+  max-width: 100%;
+}
+
+.grid-container-technology > .number-indicators {
+  grid-area: tabs;
+}
+
+.grid-container-technology > .technology-details {
+  grid-area: content;
+}
+
+.technology-details h2 {
+  color: hsl(var(--clr-white) / 50%);
+}
+
+/* stylelint-disable-next-line media-feature-range-notation */
+@media (min-width: 35rem) {
+  .technology {
+    background-position: center center;
+    background-image: url("../assets/technology/background-technology-tablet.jpg");
+  }
+}
+
+/* stylelint-disable-next-line media-feature-range-notation */
+@media (min-width: 45rem) {
+  .technology {
+    background-image: url("../assets/technology/background-technology-desktop.jpg");
+  }
+
+  .grid-container-technology {
+    justify-items: start;
+    align-content: center;
+    grid-template-columns:
+      minmax(1rem, 1fr) minmax(0, 5rem) minmax(0, 37rem)
+      minmax(0, 23rem) minmax(0, 1fr);
+    grid-template-areas:
+      ". title title . ."
+      ". tabs content image .";
+  }
+
+  .grid-container-technology > picture {
+    max-width: 90%;
+  }
+
+  #vehicle-image > img {
+    content: url("../assets/technology/image-launch-vehicle-portrait.jpg");
+  }
+
+  #spaceport-image > img {
+    content: url("../assets/technology/image-spaceport-portrait.jpg");
+  }
+
+  #capsule-image > img {
+    content: url("../assets/technology/image-space-capsule-portrait.jpg");
+  }
+}
